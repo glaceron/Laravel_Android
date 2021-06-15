@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_margin="20dp"
+	android:orientation="vertical">
+
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Crear una nueva reserva"
+		android:textColor="#219085"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toTopOf="@+id/textView1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.504"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.733" />
+
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Dia:"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.173"
+		app:layout_constraintStart_toStartOf="@+id/textView"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.137" />
+
+	<TextView
+		android:id="@+id/textView7"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Hora inicio:"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/textView"
+		app:layout_constraintHorizontal_bias="0.061"
+		app:layout_constraintStart_toStartOf="@+id/textView"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.435" />
+
+	<TextView
+		android:id="@+id/textView8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="nº Horas"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/textView"
+		app:layout_constraintHorizontal_bias="0.836"
+		app:layout_constraintStart_toStartOf="@+id/textView"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.435" />
+
+	<TextView
+		android:id="@+id/textView6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Mes:"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/textView"
+		app:layout_constraintHorizontal_bias="0.835"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.137" />
+
+	<NumberPicker
+		android:id="@+id/numberPickerDia"
+		android:layout_width="58dp"
+		android:layout_height="109dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="@+id/textView1"
+		app:layout_constraintHorizontal_bias="0.6"
+		app:layout_constraintStart_toStartOf="@+id/textView1"
+		app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+	<NumberPicker
+		android:id="@+id/numberPickerHora"
+		android:layout_width="70dp"
+		android:layout_height="107dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="@+id/textView7"
+		app:layout_constraintHorizontal_bias="0.529"
+		app:layout_constraintStart_toStartOf="@+id/textView7"
+		app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+	<NumberPicker
+		android:id="@+id/numberPickerHoras"
+		android:layout_width="74dp"
+		android:layout_height="106dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="@+id/textView8"
+		app:layout_constraintHorizontal_bias="0.4"
+		app:layout_constraintStart_toStartOf="@+id/textView8"
+		app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+	<NumberPicker
+		android:id="@+id/numberPickerMes"
+		android:layout_width="60dp"
+		android:layout_height="107dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="@+id/textView6"
+		app:layout_constraintHorizontal_bias="0.6"
+		app:layout_constraintStart_toStartOf="@+id/textView6"
+		app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+	<Button
+		android:id="@+id/cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Cancel"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.799"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/numberPickerHora"
+		app:layout_constraintVertical_bias="0.274" />
+
+	<Button
+		android:id="@+id/accept"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Accept"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/cancel"
+		app:layout_constraintHorizontal_bias="0.511"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/numberPickerHora"
+		app:layout_constraintVertical_bias="0.274" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
